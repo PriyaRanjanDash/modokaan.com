@@ -29,7 +29,7 @@ td, th {
 position:absolute;
   left:230px;
   top:20px;
-}
+} 
 #sidebar{
 
 position: fixed;

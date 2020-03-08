@@ -1,4 +1,9 @@
+$('.productView').on("click", function(){
+//alert('mm');
+window.location.href = "productView.php";
 
+
+});
 /*$("#productlist").on('change', function(){	
 	var itemSelected = $('#productlist').val();	
 	var select = document.getElementById("qty");
@@ -171,8 +176,9 @@ function calculatePrices(newWeight,newPrice)
 }
 	
 
-function Add(itemValue) {
-  
+function Add(itemValue,e) {
+    if(!e) e = window.event;
+    e.stopPropagation();
 	var array = itemValue.split(":"); 
 	var itemName=array[0];
 	var weight=array[1];

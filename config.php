@@ -5,10 +5,10 @@
 	
 	$conn = mysqli_connect($dbhost, $dbuser, $dbpass,"modokaa_user_address");
 	
-   	if ($conn->connect_error) 
+   	/*if ($conn->connect_error) 
 	{
     	die("Connection failed: " . $conn->connect_error);
-	}
+	}*/
 	/*else
 	{
 		echo "Successful ";
